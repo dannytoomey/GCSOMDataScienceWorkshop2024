@@ -1,0 +1,5 @@
+Study_name, Number_affected_experimental, Number_not_affected_experimental, Number_affected_control, Number_not_affected_control
+"Study A", 50, 100, 5, 75
+"Study B", 60, 110, 10, 65
+"Study C", 45, 95, 4, 30
+"Study D", 45, 90, 10, 20
