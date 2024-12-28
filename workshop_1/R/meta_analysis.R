@@ -11,6 +11,13 @@ lapply(required_packages, require, character.only = TRUE)
 
 data <- read_csv("workshop_1/data/data.csv")
 
+if (!dir.exists(file.path("outputs"))) {
+  dir.create(file.path("outputs"))
+}
+if (!dir.exists(file.path("outputs/workshop_1"))) {
+  dir.create(file.path("outputs/workshop_1"))
+}
+
 or_meta_bin <- metabin(
   event.e = Number_affected_experimental,
   n.e = Number_affected_experimental + Number_not_affected_experimental,
@@ -27,7 +34,9 @@ or_meta_bin <- metabin(
   hakn = TRUE,
 )
 
-pdf(file = "outputs/OR Meta Analysis Forest Plot.pdf", width = 11, height = 3)
+pdf(file = "outputs/workshop_1/OR Meta Analysis Forest Plot.pdf",
+  width = 11, height = 3
+)
 metafor::forest(
   or_meta_bin,
   sortvar = TE,
@@ -40,7 +49,7 @@ dev.off()
 
 capture.output(
   summary(or_meta_bin),
-  file = "outputs/OR Meta Analysis Summary.txt"
+  file = "outputs/workshop_1/OR Meta Analysis Summary.txt"
 )
 
 rr_meta_bin <- metabin(
@@ -59,7 +68,9 @@ rr_meta_bin <- metabin(
   hakn = TRUE,
 )
 
-pdf(file = "outputs/RR Meta Analysis Forest Plot.pdf", width = 11, height = 3)
+pdf(file = "outputs/workshop_1/RR Meta Analysis Forest Plot.pdf",
+  width = 11, height = 3
+)
 metafor::forest(
   rr_meta_bin,
   sortvar = TE,
@@ -72,5 +83,5 @@ dev.off()
 
 capture.output(
   summary(rr_meta_bin),
-  file = "outputs/RR Meta Analysis Summary.txt"
+  file = "outputs/workshop_1/RR Meta Analysis Summary.txt"
 )
