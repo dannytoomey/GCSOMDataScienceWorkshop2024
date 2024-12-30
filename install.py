@@ -5,7 +5,9 @@ dependencies=[
     'pandas >= 2.0.0',
     'scikit-learn >= 1.0.0',
     'scipy >= 1.5.0',
-    'matplotlib >= 3.7.0'
+    'matplotlib >= 3.7.0',
+    'tensorflow >= 2.18.0',
+    'scikit-learn >= 1.5.0'
 ]
 
 for mod in dependencies:
