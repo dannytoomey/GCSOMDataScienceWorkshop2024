@@ -4,7 +4,8 @@ dependencies=[
     'numpy >= 1.20.0',
     'pandas >= 2.0.0',
     'scikit-learn >= 1.0.0',
-    'scipy >= 1.5.0'
+    'scipy >= 1.5.0',
+    'matplotlib >= 3.7.0'
 ]
 
 for mod in dependencies:

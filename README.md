@@ -30,5 +30,4 @@ very basics and work our way up to advanced modelling and analysis!
     In this workshop, we will cover: 
     - Fundamentals of advanced modelling 
     - Machine learning 
-    - TBD 
-    - Application of concepts to a real project
+    - Application of concepts to a real project 
