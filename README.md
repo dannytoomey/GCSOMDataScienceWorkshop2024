@@ -31,3 +31,6 @@ very basics and work our way up to advanced modelling and analysis!
     - Fundamentals of advanced modelling 
     - Machine learning 
     - Application of concepts to a real project 
+
+Additional information on installation and setup can be found in the
+[wiki](https://github.com/dannytoomey/GCSOMDataScienceWorkshop2024/wiki) page for this repository. 
